@@ -98,9 +98,6 @@ const Hero = () => {
               src="/profile.jpg" 
               alt={USER_INFO.name} 
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-              onError={(e) => {
-                e.currentTarget.src = 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=800'; // Fallback
-              }}
             />
           </motion.div>
         </motion.div>
