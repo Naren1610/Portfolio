@@ -1,6 +1,6 @@
-
 import { motion, useMotionValue, useTransform } from 'framer-motion';
 import { USER_INFO } from '../constants';
+import profileImg from '../assets/profile.jpg';
 
 const Hero = () => {
   const x = useMotionValue(0);
@@ -95,7 +95,7 @@ const Hero = () => {
           >
             {/* The user picture */}
             <img 
-              src="/profile.jpg" 
+              src={profileImg} 
               alt={USER_INFO.name} 
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
