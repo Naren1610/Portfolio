@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className="flex gap-8" style={{ fontWeight: 500 }}>
         <motion.a href="#home" whileHover={{ scale: 1.05, color: 'var(--primary)' }}>Home</motion.a>
         <motion.a href="#experience" whileHover={{ scale: 1.05, color: 'var(--primary)' }}>Background</motion.a>
-        <motion.a href="#projects" whileHover={{ scale: 1.05, color: 'var(--primary)' }}>Projects</motion.a>
+        <motion.a href="#projects" whileHover={{ scale: 1.05, color: 'var(--primary)' }}>Artifacts</motion.a>
       </div>
     </motion.nav>
   );
