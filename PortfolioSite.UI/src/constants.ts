@@ -46,5 +46,15 @@ export const USER_INFO = {
       university: "Sree Vidhyanikethan Engineering College",
       duration: "April 2018"
     }
+  ],
+  artifacts: [
+    {
+      title: "Automated Cryptocurrency Data Extraction & Analysis",
+      objective: "To automate the extraction of live cryptocurrency market data from RESTful APIs and structure it for exploratory data analysis.",
+      process: "I wrote a Python script in a Jupyter Notebook to query the CoinMarketCap API. I parsed the nested JSON responses, handled API authentication, and transformed the raw data into a structured Pandas DataFrame for further analysis.",
+      tools: ["Python", "Pandas", "Requests", "Jupyter Notebook", "CoinMarketCap API"],
+      valueProposition: "It demonstrates my ability to build automated data pipelines, interact with live web APIs, and wrangle complex JSON data into analytical formats—critical skills for Data Science and Backend Engineering.",
+      fileRef: "CryptoAPI Data Analysis.ipynb"
+    }
   ]
 };
