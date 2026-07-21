@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { USER_INFO } from '../constants';
+import CryptoDashboard from './CryptoDashboard';
 
 const ArtifactCard = ({ artifact, index }: { artifact: any, index: number }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -54,6 +55,12 @@ const ArtifactCard = ({ artifact, index }: { artifact: any, index: number }) => 
             <h4 style={{ color: '#a5b4fc', marginBottom: '0.2rem' }}>Value Proposition</h4>
             <p style={{ margin: 0, color: '#d1d5db' }}>{artifact.valueProposition}</p>
           </div>
+          
+          {artifact.title.includes("Live Crypto Dashboard") && (
+            <div style={{ marginTop: '2rem', paddingTop: '2rem', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
+               <CryptoDashboard />
+            </div>
+          )}
         </div>
       </motion.div>
     </motion.div>

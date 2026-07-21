@@ -49,11 +49,11 @@ export const USER_INFO = {
   ],
   artifacts: [
     {
-      title: "Automated Cryptocurrency Data Extraction & Analysis",
-      objective: "To automate the extraction of live cryptocurrency market data from RESTful APIs and structure it for exploratory data analysis.",
-      process: "I wrote a Python script in a Jupyter Notebook to query the CoinMarketCap API. I parsed the nested JSON responses, handled API authentication, and transformed the raw data into a structured Pandas DataFrame for further analysis.",
-      tools: ["Python", "Pandas", "Requests", "Jupyter Notebook", "CoinMarketCap API"],
-      valueProposition: "It demonstrates my ability to build automated data pipelines, interact with live web APIs, and wrangle complex JSON data into analytical formats—critical skills for Data Science and Backend Engineering.",
+      title: "Live Crypto Dashboard & Data Analysis",
+      objective: "To demonstrate the transformation of an automated Python data extraction pipeline (Jupyter Notebook) into a live, interactive web dashboard.",
+      process: "Initially, I built a Python pipeline to query the CoinMarketCap API, parse JSON, and build Pandas DataFrames for visualization using Seaborn. To showcase this in my portfolio, I translated that logic into a live React component. It now fetches real-time data from the free CoinGecko API and visualizes 7-day price trends and percentage changes using Recharts.",
+      tools: ["React", "TypeScript", "CoinGecko API", "Recharts", "Framer Motion", "Python (Original)"],
+      valueProposition: "It demonstrates my ability to not only write robust data extraction scripts in Python, but also to operationalize that data by building modern, interactive frontend experiences that run live in the browser.",
       fileRef: "CryptoAPI Data Analysis.ipynb"
     }
   ]
