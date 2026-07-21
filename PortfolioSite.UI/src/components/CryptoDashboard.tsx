@@ -93,7 +93,12 @@ const CryptoDashboard = () => {
       style={{ marginTop: '2rem', display: 'flex', flexDirection: 'column', gap: '2rem' }}
     >
       <div className="flex justify-between items-center" style={{ flexWrap: 'wrap', gap: '1rem' }}>
-         <h4 style={{ margin: 0, fontSize: '1.2rem', color: '#fff' }}>🔴 Live Market Data</h4>
+         <div>
+           <h4 style={{ margin: 0, fontSize: '1.2rem', color: '#fff' }}>🔴 Live Market Data</h4>
+           <p style={{ margin: '4px 0 0 0', fontSize: '0.85rem', color: '#f59e0b' }}>
+             ⚠️ <b>Note:</b> Free API tier caches data every 1-5 minutes. Frequent refreshes may show identical numbers.
+           </p>
+         </div>
          <button onClick={fetchData} style={{ padding: '6px 12px', background: 'rgba(255,255,255,0.1)', color: '#fff', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', cursor: 'pointer', fontSize: '0.9rem' }}>
            Refresh Data
          </button>

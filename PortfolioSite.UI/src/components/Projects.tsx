@@ -11,16 +11,14 @@ const ArtifactCard = ({ artifact, index }: { artifact: any, index: number }) => 
       className="glass-card"
       style={{
         marginBottom: '2rem',
-        cursor: 'pointer',
         overflow: 'hidden'
       }}
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.2 }}
-      onClick={() => setIsOpen(!isOpen)}
       whileHover={{ scale: 1.01, backgroundColor: 'rgba(255, 255, 255, 0.08)' }}
     >
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center" onClick={() => setIsOpen(!isOpen)} style={{ cursor: 'pointer' }}>
         <h3 style={{ fontSize: '1.5rem', margin: 0, color: 'var(--text-color)' }}>{artifact.title}</h3>
         <span style={{ color: 'var(--primary)', fontWeight: 'bold' }}>
           {isOpen ? '-' : '+'}
